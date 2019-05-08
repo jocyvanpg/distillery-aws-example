@@ -11,6 +11,7 @@ config :distillery_example,
 
 # Configures the endpoint
 config :distillery_example, ExampleWeb.Endpoint,
+  server: true,
   url: [host: "localhost"],
   secret_key_base: "WLTAq0m3cyhaqufuub/5RyX8E8/s2UR2P1cVJVWn0d46GixiKO6yaTa6i8B8jbzS",
   render_errors: [view: ExampleWeb.ErrorView, accepts: ~w(html json)],
